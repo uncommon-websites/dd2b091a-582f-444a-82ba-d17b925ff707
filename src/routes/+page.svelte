@@ -23,20 +23,20 @@
       <!-- Quick Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
         <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">$100M+</div>
-          <div class="text-sm text-gray-600">ARR in AI products</div>
+          <div class="text-3xl md:text-4xl font-bold text-white mb-2">$100M+</div>
+          <div class="text-sm text-primary-200">ARR in AI products</div>
         </div>
         <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">10,000+</div>
-          <div class="text-sm text-gray-600">AI-enabled customers</div>
+          <div class="text-3xl md:text-4xl font-bold text-white mb-2">10,000+</div>
+          <div class="text-sm text-primary-200">AI-enabled customers</div>
         </div>
         <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">9</div>
-          <div class="text-sm text-gray-600">Product teams led</div>
+          <div class="text-3xl md:text-4xl font-bold text-white mb-2">9</div>
+          <div class="text-sm text-primary-200">Product teams led</div>
         </div>
         <div class="text-center">
-          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">90%</div>
-          <div class="text-sm text-gray-600">Automation rate achieved</div>
+          <div class="text-3xl md:text-4xl font-bold text-white mb-2">90%</div>
+          <div class="text-sm text-primary-200">Automation rate achieved</div>
         </div>
       </div>
     </div>
@@ -48,16 +48,16 @@
       <p class="text-center text-sm font-medium text-gray-500 mb-12 uppercase tracking-wide">
         Trusted by product teams at
       </p>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-12 items-center justify-items-center opacity-60 hover:opacity-100 transition-all duration-500">
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-red-600">Netflix</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-orange-600">Reddit</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-blue-600">Vimeo</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl">Levi's</span></div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-12 items-center justify-items-center opacity-70 hover:opacity-100 transition-all duration-500">
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-red-400">Netflix</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-orange-400">Reddit</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-blue-400">Vimeo</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-gray-300">Levi's</span></div>
         
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-primary-600">Zendesk</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl">Dixa</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-green-600">wefox</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl">Ultimate</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-primary-400">Zendesk</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-gray-300">Dixa</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-green-400">wefox</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-gray-300">Ultimate</span></div>
       </div>
     </div>
   </section>
