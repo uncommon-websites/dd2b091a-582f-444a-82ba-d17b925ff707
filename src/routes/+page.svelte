@@ -1,9 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-
-  // SVGs
-  const arrowUpIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>`;
-  const playIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><polygon points="5 3 19 12 5 21 5 3"/></svg>`;
 </script>
 
 <div class="w-full bg-white">
@@ -12,125 +8,92 @@
     <div class="max-w-[1200px] mx-auto">
       <div class="text-center max-w-4xl mx-auto mb-16">
         <h1 class="text-5xl md:text-[64px] leading-[1.1] font-medium tracking-tight text-gray-900 mb-6">
-          Better customer<br />experiences. <span class="block">Built on Sierra.</span>
+          Building AI-native<br />product leadership
         </h1>
         <p class="text-xl md:text-[22px] leading-relaxed text-gray-600 max-w-2xl mx-auto">
-          Sierra helps businesses build better, more human<br class="hidden md:block" />customer experiences with AI.
+          The systems, the teams, and the organizational designs<br class="hidden md:block" />that make AI products work at scale.
         </p>
       </div>
 
-      <!-- Hero Card -->
-      <div class="bg-[#F4F4F0] rounded-[40px] p-8 md:p-20 w-full aspect-[16/10] md:aspect-[16/9] relative flex flex-col items-center justify-center shadow-sm">
-        
-        <!-- Search Bar Simulation -->
-        <div class="w-full max-w-2xl bg-white rounded-full p-2 pl-8 pr-2 shadow-[0_4px_20px_rgba(0,0,0,0.04)] border border-blue-100/50 flex items-center justify-between mb-12 transform transition-transform hover:scale-[1.01] duration-300">
-          <span class="text-xl text-blue-400 font-light tracking-wide">Can you help me find a room with a view?</span>
-          <button class="bg-[#8BB8E8] hover:bg-[#7AA8D8] transition-colors rounded-full w-10 h-10 flex items-center justify-center">
-            {@html arrowUpIcon}
-          </button>
+      <!-- Hero Image -->
+      <div class="rounded-[40px] overflow-hidden shadow-2xl">
+        <img src="/generated/image-professional-product-leader-in-a-modern--1766959874356-0.webp" alt="Mirza Besirovic - AI Product Leader" class="w-full h-auto" />
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">$100M+</div>
+          <div class="text-sm text-gray-600">ARR in AI products</div>
         </div>
-
-        <!-- Watch Video Button -->
-        <button class="absolute bottom-12 md:bottom-16 flex items-center gap-2 bg-[#105D37] hover:bg-[#0C492B] text-white px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:shadow-lg">
-          <span class="w-5 h-5 flex items-center justify-center bg-white/20 rounded-full">
-            {@html playIcon}
-          </span>
-          Watch Video
-        </button>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">10,000+</div>
+          <div class="text-sm text-gray-600">AI-enabled customers</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">9</div>
+          <div class="text-sm text-gray-600">Product teams led</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">90%</div>
+          <div class="text-sm text-gray-600">Automation rate achieved</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Logos Section -->
-  <section class="py-12 border-b border-transparent">
+  <!-- Companies Section -->
+  <section class="py-20 border-b border-gray-100">
     <div class="max-w-[1200px] mx-auto px-6">
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-y-12 gap-x-8 items-center justify-items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-        <!-- Row 1 -->
-        <div class="h-8 flex items-center"><span class="font-bold text-xl">Rocket Mortgage</span></div>
-        <div class="h-8 flex items-center"><span class="font-serif text-2xl">GAP</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl">SoFi</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl tracking-tighter">SiriusXM</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl italic">Safelite</span></div>
+      <p class="text-center text-sm font-medium text-gray-500 mb-12 uppercase tracking-wide">
+        Trusted by product teams at
+      </p>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-12 items-center justify-items-center opacity-60 hover:opacity-100 transition-all duration-500">
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-red-600">Netflix</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-orange-600">Reddit</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-blue-600">Vimeo</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl">Levi's</span></div>
         
-        <!-- Row 2 -->
-        <div class="h-8 flex items-center"><span class="font-bold text-lg uppercase">The North Face</span></div>
-        <div class="h-8 flex items-center"><span class="font-medium text-xl">wayfair</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl text-teal-600">deliveroo</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl text-indigo-600">Discord</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl tracking-widest">DIRECTV</span></div>
-
-        <!-- Row 3 -->
-        <div class="h-8 flex items-center"><span class="font-serif text-xl">Casper</span></div>
-        <div class="h-8 flex items-center"><span class="font-serif text-xl">minted.</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl text-red-600">HyVee</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl">Brex</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl text-blue-600">ADT</span></div>
-
-        <!-- Row 4 -->
-        <div class="h-8 flex items-center"><span class="font-medium text-xl">sweetgreen</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl border-2 border-current p-1">R1</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl text-red-500">Redfin</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-2xl lowercase">tubi</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl tracking-widest">SONOS</span></div>
-
-        <!-- Row 5 -->
-        <div class="h-8 flex items-center"><span class="font-bold text-xl text-red-700">CDW</span></div>
-        <div class="h-8 flex items-center"><span class="font-light text-2xl tracking-widest">CLEAR</span></div>
-        <div class="h-8 flex items-center"><span class="font-medium text-xl">ramp</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-xl tracking-widest">RIVIAN</span></div>
-        <div class="h-8 flex items-center"><span class="font-bold text-lg">WeightWatchers</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-primary-600">Zendesk</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl">Dixa</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl text-green-600">wefox</span></div>
+        <div class="h-8 flex items-center"><span class="font-bold text-2xl">Ultimate</span></div>
       </div>
     </div>
   </section>
 
-  <!-- Feature Section 1 -->
-  <section class="py-24 px-6">
+  <!-- Feature Section 1: AI Systems -->
+  <section class="py-24 px-6" id="work">
     <div class="max-w-[1200px] mx-auto">
-      <div class="flex flex-col md:flex-row gap-16 items-start">
+      <div class="flex flex-col md:flex-row gap-16 items-center">
         <!-- Visual -->
-        <div class="w-full md:w-1/2 bg-[#EBEBE6] rounded-[32px] aspect-square relative overflow-hidden group">
-          <div class="absolute inset-0 flex items-center justify-center p-8">
-            <!-- Chat Bubble -->
-            <div class="bg-white rounded-2xl p-4 shadow-sm max-w-[80%] flex gap-4 items-start animate-in fade-in slide-in-from-bottom-4 duration-1000">
-              <div class="w-10 h-10 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden">
-                <img src="https://i.pravatar.cc/100?img=5" alt="Jes" class="w-full h-full object-cover" />
-              </div>
-              <div>
-                <div class="text-xs font-medium text-gray-500 mb-1">Jes</div>
-                <div class="text-lg leading-snug text-gray-900">
-                  I'm flying back. Can you cancel my
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="absolute bottom-6 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-          </button>
+        <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden shadow-xl">
+          <img src="/generated/image-diverse-product-team-collaborating-aroun-1766959877472-1.webp" alt="Product team collaboration" class="w-full h-full object-cover" />
         </div>
 
         <!-- Content -->
-        <div class="w-full md:w-1/2 pt-8">
+        <div class="w-full md:w-1/2">
           <div class="flex justify-between items-start mb-6">
             <h2 class="text-4xl md:text-[40px] leading-tight font-medium text-gray-900 max-w-md">
-              Transform your customer experience
+              AI systems that learn and adapt
             </h2>
-            <span class="bg-[#105D37] text-white px-3 py-1.5 rounded-full text-xs font-medium">Our product</span>
+            <span class="bg-primary-600 text-white px-3 py-1.5 rounded-full text-xs font-medium">Products</span>
           </div>
           
           <p class="text-gray-600 text-lg mb-12 leading-relaxed">
-            Enable your customers to get answers, solve problems, and take action—any time, on any channel, in any language.
+            I design and scale agentic platforms that automate up to 90% of customer interactions—turning AI from demos into durable revenue.
           </p>
 
           <div class="space-y-10">
             <!-- Feature 1 -->
             <div class="flex gap-4">
               <div class="mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
               </div>
               <div>
-                <h3 class="font-medium text-gray-900 mb-2">Engage and delight customers</h3>
+                <h3 class="font-medium text-gray-900 mb-2">Multi-agent orchestration</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  Deploy an AI agent that is always available, empathetic, and aligned to your brand tone and voice.
+                  Build platforms that coordinate multiple AI agents, zero-training engines, and RAG-based knowledge grounding for autonomous customer service.
                 </p>
               </div>
             </div>
@@ -138,12 +101,12 @@
             <!-- Feature 2 -->
             <div class="flex gap-4">
               <div class="mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
               </div>
               <div>
-                <h3 class="font-medium text-gray-900 mb-2">Support your customers in real-time</h3>
+                <h3 class="font-medium text-gray-900 mb-2">From weeks to hours</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  Help customers with even their most complex issues, whether making an exchange or updating a subscription.
+                  Reduce bot deployment times from weeks to hours, powering autonomous customer service for Netflix, Reddit, Vimeo, Levi's, and thousands of enterprises.
                 </p>
               </div>
             </div>
@@ -151,12 +114,12 @@
             <!-- Feature 3 -->
             <div class="flex gap-4">
               <div class="mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
               </div>
               <div>
-                <h3 class="font-medium text-gray-900 mb-2">Adapt and get better, faster</h3>
+                <h3 class="font-medium text-gray-900 mb-2">Commercial growth driver</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  Respond swiftly to changes in your business, and harness analytics and reporting to continuously improve the customer experience.
+                  Turn automated resolutions from a metric into a commercial growth driver worth $100M+ ARR, with voice automation and human-in-the-loop workflows.
                 </p>
               </div>
             </div>
@@ -166,76 +129,63 @@
     </div>
   </section>
 
-  <!-- Testimonial Section -->
+  <!-- Impact Section -->
   <section class="py-12 px-6">
     <div class="max-w-[1200px] mx-auto">
-      <div class="bg-[#F4F4F0] rounded-[32px] p-12 md:p-16 relative">
-        <div class="mb-8 font-bold text-lg">WeightWatchers</div>
+      <div class="bg-gray-50 rounded-[32px] p-12 md:p-16 relative">
+        <div class="mb-8 font-bold text-lg text-primary-600">Current Role</div>
         <blockquote class="text-2xl md:text-3xl font-medium leading-tight text-gray-900 mb-12 max-w-4xl">
-          "I knew the AI agent would answer questions quickly, but I didn't expect the responses to be so genuine and empathetic."
+          "Group Product Manager for AI Agents at Zendesk, running product for a platform serving 10,000+ AI-enabled customers and generating $100M+ ARR."
         </blockquote>
         <div class="flex items-center justify-between flex-wrap gap-6">
           <div class="flex items-center gap-4">
-            <img src="https://i.pravatar.cc/100?img=9" alt="Maureen Martin" class="w-12 h-12 rounded-full object-cover" />
+            <img src="/generated/image-professional-headshot-of-a-confident-pro-1766959885013-4.webp" alt="Mirza Besirovic" class="w-16 h-16 rounded-full object-cover" />
             <div>
-              <div class="font-medium text-gray-900">Maureen Martin</div>
-              <div class="text-sm text-gray-500">VP of Customer Care, WeightWatchers</div>
+              <div class="font-medium text-gray-900">Mirza Besirovic</div>
+              <div class="text-sm text-gray-500">Group PM for AI Agents, Zendesk</div>
             </div>
           </div>
-          <a href="#" class="inline-flex items-center gap-2 bg-[#105D37] hover:bg-[#0C492B] text-white px-5 py-2.5 rounded-full text-sm font-medium transition-colors">
-            Full story
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-          </a>
+          <div class="text-right">
+            <div class="text-sm text-gray-500 mb-1">Managing</div>
+            <div class="font-bold text-2xl text-gray-900">9 Product Teams</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Feature Section 2 (Sierra speaks) -->
-  <section class="py-24 px-6 bg-[#F9F9F9]">
+  <!-- Feature Section 2: Teams & Operating Models -->
+  <section class="py-24 px-6 bg-gray-50" id="expertise">
     <div class="max-w-[1200px] mx-auto">
-      <div class="flex flex-col md:flex-row gap-16 items-start">
+      <div class="flex flex-col md:flex-row-reverse gap-16 items-center">
         <!-- Visual -->
-        <div class="w-full md:w-1/2 bg-white rounded-[32px] aspect-square relative flex items-center justify-center p-8 shadow-sm">
-           <!-- Audio Wave Animation Simulation -->
-           <div class="flex items-center gap-1.5 h-16">
-             {#each Array(15) as _, i}
-               <div class="w-1.5 bg-gray-200 rounded-full animate-pulse" style="height: {20 + Math.random() * 40}%; animation-delay: {i * 0.1}s"></div>
-             {/each}
-           </div>
-           <div class="absolute bottom-6 left-6 flex gap-2">
-             <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 text-gray-600">
-               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-             </button>
-             <button class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center hover:bg-gray-200 text-gray-600">
-               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-             </button>
-           </div>
+        <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden shadow-xl">
+          <img src="/generated/image-professional-speaker-presenting-at-a-tec-1766959879967-2.webp" alt="Speaking at conference" class="w-full h-full object-cover" />
         </div>
 
         <!-- Content -->
-        <div class="w-full md:w-1/2 pt-8">
+        <div class="w-full md:w-1/2">
           <div class="flex justify-between items-start mb-6">
             <h2 class="text-4xl md:text-[40px] leading-tight font-medium text-gray-900 max-w-md">
-              Sierra speaks
+              Teams & operating models
             </h2>
-            <span class="bg-[#105D37] text-white px-3 py-1.5 rounded-full text-xs font-medium">Learn more</span>
+            <span class="bg-primary-600 text-white px-3 py-1.5 rounded-full text-xs font-medium">Leadership</span>
           </div>
           
           <p class="text-gray-600 text-lg mb-12 leading-relaxed">
-            Introducing voice, a new way to communicate with your customers.
+            I build the teams, operating models, and strategic roadmaps that allow companies to actually ship AI at scale.
           </p>
 
           <div class="space-y-10">
             <!-- Feature 1 -->
             <div class="flex gap-4">
               <div class="mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div>
-                <h3 class="font-medium text-gray-900 mb-2">Engage with faster, better phone calls</h3>
+                <h3 class="font-medium text-gray-900 mb-2">Post-acquisition integration</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  Your agent delivers delightful and personalized conversations. Always available, endlessly patient, and able to reason, predict, and act in real-time.
+                  Design product org structures for merging 5+ teams across acquisitions (Dixa + Solvemate, Ultimate into Zendesk), navigating complex post-M&A alignment.
                 </p>
               </div>
             </div>
@@ -243,12 +193,12 @@
             <!-- Feature 2 -->
             <div class="flex gap-4">
               <div class="mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
               </div>
               <div>
-                <h3 class="font-medium text-gray-900 mb-2">Connect to your call center ecosystem</h3>
+                <h3 class="font-medium text-gray-900 mb-2">Capacity planning & continuous discovery</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  Seamlessly integrate with your existing technology stack, with comprehensive summaries and intelligent routing when escalation is required.
+                  Build frameworks that align product ambition with engineering reality, cutting roadmaps from 241% capacity to something teams can actually ship.
                 </p>
               </div>
             </div>
@@ -256,12 +206,12 @@
             <!-- Feature 3 -->
             <div class="flex gap-4">
               <div class="mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-900"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="m16.2 16.2 2.9 2.9"/><path d="M12 18v4"/><path d="m4.9 19.1 2.9-2.9"/><path d="M2 12h4"/><path d="m4.9 4.9 2.9 2.9"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
               </div>
               <div>
-                <h3 class="font-medium text-gray-900 mb-2">Scale consistent experiences on every channel</h3>
+                <h3 class="font-medium text-gray-900 mb-2">Coaching & empowerment</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  Use Agent OS to build once and run everywhere, with a continuously-improving, trusted AI agent tailored to your brand, goals, and processes.
+                  Coach Group PMs and senior PMs to operate with autonomy, creating environments where product people do their best work through clear direction and ownership.
                 </p>
               </div>
             </div>
@@ -271,60 +221,51 @@
     </div>
   </section>
 
-  <!-- Feature Section 3 (Make AI your own) -->
-  <section class="py-24 px-6 bg-[#EBEBE6]">
+  <!-- Feature Section 3: Strategic Frameworks -->
+  <section class="py-24 px-6">
     <div class="max-w-[1200px] mx-auto">
-      <div class="flex flex-col md:flex-row gap-16 items-start">
+      <div class="flex flex-col md:flex-row gap-16 items-center">
         <!-- Visual -->
-        <div class="w-full md:w-1/2 bg-[#DEDEd9] rounded-[32px] aspect-square relative flex items-center justify-center p-8 shadow-inner">
-           <!-- Card Simulation -->
-           <div class="bg-white rounded-2xl p-6 shadow-sm w-[80%] max-w-sm">
-             <div class="flex gap-4 items-center mb-2">
-               <div class="w-10 h-10 bg-[#E8DCC6] text-[#8B7355] rounded-full flex items-center justify-center text-xl font-serif font-bold">W</div>
-               <div>
-                 <div class="text-xs text-gray-500 uppercase tracking-wide font-medium">WestWalk Bags</div>
-                 <div class="text-lg leading-snug text-gray-900">
-                   Your order will arrive this Thursday.
-                 </div>
-               </div>
-             </div>
-           </div>
-           
-           <button class="absolute bottom-6 left-6 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm hover:scale-105 transition-transform">
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-           </button>
+        <div class="w-full md:w-1/2 rounded-[32px] overflow-hidden shadow-xl">
+          <img src="/generated/image-one-on-one-mentoring-session-between-two-1766959882503-3.webp" alt="Mentoring session" class="w-full h-full object-cover" />
         </div>
 
         <!-- Content -->
-        <div class="w-full md:w-1/2 pt-8">
+        <div class="w-full md:w-1/2">
           <div class="flex justify-between items-start mb-6">
             <h2 class="text-4xl md:text-[40px] leading-tight font-medium text-gray-900 max-w-md">
-              Make AI your own
+              Strategic frameworks
             </h2>
-            <span class="bg-[#105D37] text-white px-3 py-1.5 rounded-full text-xs font-medium">Our platform</span>
+            <span class="bg-primary-600 text-white px-3 py-1.5 rounded-full text-xs font-medium">Strategy</span>
           </div>
           
           <p class="text-gray-600 text-lg mb-12 leading-relaxed">
-            Sierra's platform enables your company to build an AI agent that is personalized to your business and customers.
+            I operate as a translator and integrator—connecting AI capabilities, market realities, and organizational constraints into coherent roadmaps.
           </p>
 
           <div class="space-y-4">
             <!-- Feature 1 (Active) -->
-            <div class="bg-[#DEDEd9]/50 p-6 rounded-xl border border-transparent">
-              <h3 class="font-medium text-gray-900 mb-2 text-sm">Ground your AI agent</h3>
+            <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <h3 class="font-medium text-gray-900 mb-2 text-sm">Pricing & packaging for AI</h3>
               <p class="text-gray-600 text-xs leading-relaxed">
-                Imbue your agent with your company's identity, policies, processes, and knowledge – ensuring your agent represents the best of your business.
+                Co-define pricing and packaging strategy for AI automation, establishing automated resolutions as both a product metric and a revenue driver.
               </p>
             </div>
 
             <!-- Feature 2 -->
-            <div class="p-6 rounded-xl border border-gray-200/50 hover:bg-white/50 transition-colors cursor-pointer">
-              <h3 class="font-medium text-gray-500 mb-0 text-sm">Solve problems the right way</h3>
+            <div class="p-6 rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors">
+              <h3 class="font-medium text-gray-900 mb-2 text-sm">Post-M&A roadmap alignment</h3>
+              <p class="text-gray-600 text-xs leading-relaxed">
+                Navigate the complex alignment of visions and roadmaps after acquisitions, turning competing priorities into unified product strategy.
+              </p>
             </div>
 
             <!-- Feature 3 -->
-            <div class="p-6 rounded-xl border border-gray-200/50 hover:bg-white/50 transition-colors cursor-pointer">
-              <h3 class="font-medium text-gray-500 mb-0 text-sm">Take action on your systems</h3>
+            <div class="p-6 rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors">
+              <h3 class="font-medium text-gray-900 mb-2 text-sm">AI evaluation frameworks</h3>
+              <p class="text-gray-600 text-xs leading-relaxed">
+                Build instrumentation and evaluation frameworks that allow companies to systematically improve AI performance rather than just ship features.
+              </p>
             </div>
           </div>
         </div>
@@ -332,215 +273,197 @@
     </div>
   </section>
 
-  <!-- Security Section -->
-  <section class="py-24 px-6 bg-[#1A1A1A] text-white">
+  <!-- Speaking & Community Section -->
+  <section class="py-24 px-6 bg-gray-900 text-white" id="speaking">
     <div class="max-w-[1200px] mx-auto">
-      <div class="flex flex-col md:flex-row gap-16 items-start">
-        <!-- Visual (Left) -->
-        <div class="w-full md:w-1/2 bg-[#111111] rounded-[32px] aspect-square relative flex items-center justify-center p-8 border border-white/10">
-           <div class="text-center">
-             <div class="text-white/40 text-2xl mb-4 font-light">cake recipe?</div>
-             <div class="inline-flex items-center gap-2 bg-[#F59E0B] text-black px-4 py-2 rounded-full font-medium">
-               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" x2="19.07" y1="4.93" y2="19.07"/></svg>
-               Off topic
-             </div>
-           </div>
-           
-           <button class="absolute bottom-6 left-6 w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors text-white">
-             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-           </button>
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl leading-tight font-medium text-white mb-6">
+          Speaking, mentoring & community
+        </h2>
+        
+        <p class="text-gray-400 text-lg leading-relaxed max-w-3xl mx-auto">
+          Beyond full-time product leadership, I speak at conferences, mentor product leaders, and build communities that support the next generation of AI product builders.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Speaking -->
+        <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+          <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Conference Speaking</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            ProductLab Conf Berlin, ProductCamp Europe, Alps GenAI Summit, ADPList BeMore Festival, Kiss the Future AI Summit
+          </p>
         </div>
 
-        <!-- Content (Right) -->
-        <div class="w-full md:w-1/2 pt-8">
-          <h2 class="text-4xl md:text-[40px] leading-tight font-medium text-white mb-6">
-            Safe and secure
-          </h2>
-          
-          <p class="text-gray-400 text-lg mb-12 leading-relaxed">
-            Sierra is designed with the highest commitment to trust, security, and compliance. Your AI agent won't pretend to be something it's not, and it will be honest about its limitations.
-          </p>
-
-          <div class="divide-y divide-white/10 border-t border-b border-white/10">
-            {#each ['Supervision', 'Secure integration', 'Auditing', 'Data governance', 'Privacy'] as item, i}
-              <div class="py-4">
-                <div class="flex justify-between items-center cursor-pointer group">
-                  <h3 class="font-medium text-gray-300 group-hover:text-white transition-colors text-sm">{item}</h3>
-                  {#if i === 0}
-                  <p class="mt-2 text-gray-500 text-xs max-w-md">Guardrails ensure your agent stays on-topic, and real-time monitoring tracks live interactions.</p>
-                  {/if}
-                </div>
-              </div>
-            {/each}
+        <!-- Mentoring -->
+        <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+          <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
           </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Mentoring</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            Mentoring product leaders through ADPList and 2hearts, a community supporting young immigrants in tech
+          </p>
+        </div>
+
+        <!-- Community -->
+        <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700">
+          <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold text-white mb-3">Community Building</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            Founder of productqties.com, a space for LGBTQ+ professionals in product, and writer of "You Are The Product" on Substack
+          </p>
         </div>
       </div>
+    </div>
   </section>
 
-  <!-- Results Section -->
-  <section class="py-24 px-6">
+  <!-- Experience Highlights Section -->
+  <section class="py-24 px-6" id="writing">
     <div class="max-w-[1200px] mx-auto">
       <div class="flex justify-between items-end mb-16">
         <div class="max-w-xl">
           <h2 class="text-4xl md:text-[40px] leading-tight font-medium text-gray-900 mb-6">
-            The results speak for themselves
+            Experience that drives impact
           </h2>
           <p class="text-gray-600 text-lg leading-relaxed">
-            Sierra is trusted by leading consumer brands with millions of customers across a wide range of industries.
+            From post-acquisition integration to building AI platforms at scale, I navigate the messy work between demos and $100M ARR.
           </p>
         </div>
-        <span class="bg-[#105D37] text-white px-3 py-1.5 rounded-full text-xs font-medium mb-2">Our customers</span>
+        <span class="bg-primary-600 text-white px-3 py-1.5 rounded-full text-xs font-medium mb-2">Key Projects</span>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <!-- Card 1: Sonos -->
-        <div class="group cursor-pointer">
-          <div class="relative aspect-square rounded-2xl overflow-hidden mb-6 bg-gray-100">
-            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=800&auto=format&fit=crop" alt="Sonos" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold text-3xl tracking-widest">SONOS</div>
-            <div class="absolute bottom-6 left-6 text-white">
-              <div class="text-xs font-medium opacity-80 mb-1">Customers</div>
-              <div class="text-2xl font-bold">15 Million</div>
-            </div>
-          </div>
-          <h3 class="text-xl text-gray-900 leading-snug group-hover:text-[#105D37] transition-colors">
-            How Sonos elevates the listener experience with Sierra.
+        <!-- Card 1: Zendesk -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-primary-300 transition-colors">
+          <div class="text-primary-600 font-bold text-lg mb-4">Zendesk</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4 leading-snug">
+            AI Agents Platform
           </h3>
+          <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+            Leading 9 product teams across AI platform, automation engine, conversation design, and analytics—serving 10,000+ customers generating $100M+ ARR.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="text-xs bg-white px-3 py-1 rounded-full text-gray-600 border border-gray-200">Multi-agent systems</span>
+            <span class="text-xs bg-white px-3 py-1 rounded-full text-gray-600 border border-gray-200">Voice automation</span>
+          </div>
         </div>
 
-        <!-- Card 2: SiriusXM -->
-        <div class="group cursor-pointer">
-          <div class="relative aspect-square rounded-2xl overflow-hidden mb-6 bg-gray-100">
-            <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?q=80&w=800&auto=format&fit=crop" alt="SiriusXM" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-bold text-3xl tracking-tighter">SiriusXM</div>
-            <div class="absolute bottom-6 left-6 text-white">
-              <div class="text-xs font-medium opacity-80 mb-1">Subscribers</div>
-              <div class="text-2xl font-bold">34 Million</div>
-            </div>
-          </div>
-          <h3 class="text-xl text-gray-900 leading-snug group-hover:text-[#105D37] transition-colors">
-            How SiriusXM increases listener loyalty with Sierra.
+        <!-- Card 2: Post-M&A Integration -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-primary-300 transition-colors">
+          <div class="text-primary-600 font-bold text-lg mb-4">Dixa + Ultimate</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4 leading-snug">
+            Post-Acquisition Integration
           </h3>
+          <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+            Merged 5+ teams across multiple acquisitions, navigating complex organizational alignment and building unified product roadmaps that teams can execute.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="text-xs bg-white px-3 py-1 rounded-full text-gray-600 border border-gray-200">Org design</span>
+            <span class="text-xs bg-white px-3 py-1 rounded-full text-gray-600 border border-gray-200">M&A alignment</span>
+          </div>
         </div>
 
-        <!-- Card 3: Casper -->
-        <div class="group cursor-pointer">
-          <div class="relative aspect-square rounded-2xl overflow-hidden mb-6 bg-gray-100">
-            <img src="https://images.unsplash.com/photo-1505693416388-b0346efee535?q=80&w=800&auto=format&fit=crop" alt="Casper" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white font-serif text-3xl italic">Casper</div>
-            <div class="absolute bottom-6 left-6 text-white w-full pr-6 flex justify-between">
-              <div>
-                <div class="text-xs font-medium opacity-80 mb-1">Resolution Rate</div>
-                <div class="text-2xl font-bold flex items-center gap-1"><span class="text-sm">↗</span> 74%</div>
-              </div>
-              <div>
-                <div class="text-xs font-medium opacity-80 mb-1">Increase in CSAT</div>
-                <div class="text-2xl font-bold flex items-center gap-1"><span class="text-sm">↗</span> >20%</div>
-              </div>
-            </div>
-          </div>
-          <h3 class="text-xl text-gray-900 leading-snug group-hover:text-[#105D37] transition-colors">
-            How Casper turns a big purchase into a lifelong relationship with AI.
+        <!-- Card 3: Automation at Scale -->
+        <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:border-primary-300 transition-colors">
+          <div class="text-primary-600 font-bold text-lg mb-4">Enterprise CX</div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-4 leading-snug">
+            90% Automation Rate
           </h3>
+          <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+            Designed agentic platforms that automate up to 90% of customer interactions for Netflix, Reddit, Vimeo, and Levi's—reducing deployment from weeks to hours.
+          </p>
+          <div class="flex gap-2 flex-wrap">
+            <span class="text-xs bg-white px-3 py-1 rounded-full text-gray-600 border border-gray-200">RAG systems</span>
+            <span class="text-xs bg-white px-3 py-1 rounded-full text-gray-600 border border-gray-200">Zero-training AI</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA Section -->
-  <section class="py-32 px-6 text-center">
+  <section class="py-32 px-6 text-center" id="contact">
     <div class="max-w-[1200px] mx-auto">
       <h2 class="text-4xl md:text-5xl font-medium text-gray-900 mb-6 tracking-tight">
-        See what Sierra can do for you
+        Let's work together
       </h2>
       <p class="text-gray-600 text-lg max-w-2xl mx-auto mb-10">
-        Find out how Sierra can help your business build better, more human customer experiences with AI.
+        Whether you need a speaker for your conference, an advisor for your AI strategy, or a mentor for your product team—I'd love to connect.
       </p>
-      <a href="#" class="inline-block bg-[#105D37] hover:bg-[#0C492B] text-white px-8 py-3 rounded-full font-medium transition-colors">
-        Learn more
-      </a>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="https://www.linkedin.com/in/mirzabesirovic/" target="_blank" class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-full font-medium transition-colors">
+          Connect on LinkedIn
+        </a>
+        <a href="https://substack.com/@youaretheproduct" target="_blank" class="inline-block bg-white hover:bg-gray-50 text-gray-900 px-8 py-3 rounded-full font-medium border border-gray-300 transition-colors">
+          Read my Substack
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-[#F9F9F9] pt-20 pb-10 px-6 border-t border-gray-100">
+  <footer class="bg-gray-50 pt-20 pb-10 px-6 border-t border-gray-100">
     <div class="max-w-[1200px] mx-auto">
-      <div class="grid grid-cols-2 md:grid-cols-6 gap-12 mb-20">
-        <div class="col-span-2">
-          <a href="/" class="flex items-center gap-2 text-[#105D37] mb-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/></svg>
-            <span class="font-serif text-xl tracking-tight font-medium">SIERRA</span>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+        <div class="col-span-1 md:col-span-2">
+          <a href="/" class="flex items-center gap-3 text-primary-600 mb-6">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.2566 21.954C17.929 21.954 22.5274 17.484 22.5274 11.9699C22.5274 6.45586 17.929 1.98584 12.2566 1.98584C6.58422 1.98584 1.98584 6.45586 1.98584 11.9699C1.98584 17.484 6.58422 21.954 12.2566 21.954ZM15.4608 6.63684C15.6167 6.09831 15.0791 5.77985 14.5881 6.1199L7.73395 10.8665C7.20146 11.2352 7.28522 11.9699 7.85977 11.9699H9.66465V11.9563H13.1823L10.3161 12.9394L9.05251 17.303C8.89655 17.8415 9.43412 18.16 9.92517 17.8199L16.7793 13.0734C17.3118 12.7046 17.228 11.9699 16.6535 11.9699H13.9165L15.4608 6.63684Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span class="text-xl tracking-tight font-semibold text-gray-900">Mirza Besirovic</span>
           </a>
+          <p class="text-sm text-gray-600 max-w-md mb-6">
+            AI Product Leader building the systems, teams, and organizational designs that make AI products work at scale.
+          </p>
+          <p class="text-xs text-gray-500">
+            Group PM for AI Agents at Zendesk
+          </p>
         </div>
         
         <div>
-          <h4 class="font-medium text-gray-900 mb-4 text-sm">Product</h4>
+          <h4 class="font-medium text-gray-900 mb-4 text-sm">Connect</h4>
           <ul class="space-y-3 text-sm text-gray-600">
-            <li><a href="#" class="hover:text-gray-900">Product overview</a></li>
-            <li><a href="#" class="hover:text-gray-900">Meet your agent</a></li>
-            <li><a href="#" class="hover:text-gray-900">Develop</a></li>
-            <li><a href="#" class="hover:text-gray-900">Configure</a></li>
-            <li><a href="#" class="hover:text-gray-900">Optimize</a></li>
-            <li><a href="#" class="hover:text-gray-900">Assist</a></li>
-            <li><a href="#" class="hover:text-gray-900">Voice</a></li>
-            <li><a href="#" class="hover:text-gray-900">Trust and reliability</a></li>
+            <li><a href="https://www.linkedin.com/in/mirzabesirovic/" target="_blank" class="hover:text-gray-900">LinkedIn</a></li>
+            <li><a href="https://substack.com/@youaretheproduct" target="_blank" class="hover:text-gray-900">Substack</a></li>
+            <li><a href="https://www.adplist.org" target="_blank" class="hover:text-gray-900">ADPList</a></li>
+            <li><a href="https://productqties.com" target="_blank" class="hover:text-gray-900">Product Qties</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 class="font-medium text-gray-900 mb-4 text-sm">Industries</h4>
+          <h4 class="font-medium text-gray-900 mb-4 text-sm">Services</h4>
           <ul class="space-y-3 text-sm text-gray-600">
-            <li><a href="#" class="hover:text-gray-900">Industries overview</a></li>
-            <li><a href="#" class="hover:text-gray-900">Financial services</a></li>
-            <li><a href="#" class="hover:text-gray-900">Healthcare</a></li>
-            <li><a href="#" class="hover:text-gray-900">Telecommunications</a></li>
-            <li><a href="#" class="hover:text-gray-900">Media</a></li>
-            <li><a href="#" class="hover:text-gray-900">Travel and hospitality</a></li>
-            <li><a href="#" class="hover:text-gray-900">Retail and consumer goods</a></li>
-            <li><a href="#" class="hover:text-gray-900">Technology</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="font-medium text-gray-900 mb-4 text-sm">Customers</h4>
-          <ul class="space-y-3 text-sm text-gray-600">
-            <li><a href="#" class="hover:text-gray-900">Customer stories</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="font-medium text-gray-900 mb-4 text-sm">Company</h4>
-          <ul class="space-y-3 text-sm text-gray-600">
-            <li><a href="#" class="hover:text-gray-900">About</a></li>
-            <li><a href="#" class="hover:text-gray-900">Blog</a></li>
-            <li><a href="#" class="hover:text-gray-900">Resources</a></li>
-            <li><a href="#" class="hover:text-gray-900">Careers</a></li>
-            <li><a href="#" class="hover:text-gray-900">Trust Center</a></li>
+            <li><a href="#speaking" class="hover:text-gray-900">Speaking</a></li>
+            <li><a href="#expertise" class="hover:text-gray-900">Advisory</a></li>
+            <li><a href="#speaking" class="hover:text-gray-900">Mentoring</a></li>
+            <li><a href="#writing" class="hover:text-gray-900">Writing</a></li>
           </ul>
         </div>
       </div>
 
       <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-200">
-        <div class="flex flex-col md:flex-row items-center gap-6 mb-4 md:mb-0">
-          <button class="bg-white border border-gray-200 rounded-md px-3 py-1.5 text-sm text-gray-600 flex items-center gap-2 hover:border-gray-300">
-            United States (English)
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <div class="text-xs text-gray-500">
-            © 2025 Sierra
-            <a href="#" class="ml-4 hover:text-gray-900">Privacy Policy</a>
-            <a href="#" class="ml-4 hover:text-gray-900">Terms & Conditions</a>
-            <a href="#" class="ml-4 hover:text-gray-900">Cookie Preferences</a>
-          </div>
+        <div class="text-xs text-gray-500 mb-4 md:mb-0">
+          © 2025 Mirza Besirovic. All rights reserved.
         </div>
 
         <div class="flex items-center gap-4 text-gray-400">
-          <a href="#" class="hover:text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          <a href="#" class="hover:text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
-          <a href="#" class="hover:text-gray-900"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33zM9.75 15.02l5.75-3.27-5.75-3.27z"/></svg></a>
+          <a href="https://www.linkedin.com/in/mirzabesirovic/" target="_blank" class="hover:text-primary-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://substack.com/@youaretheproduct" target="_blank" class="hover:text-primary-600 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/></svg>
+          </a>
         </div>
       </div>
     </div>
